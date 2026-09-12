@@ -1,0 +1,46 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+.env
+
+# Datasets are obtained from their original providers; see DATA.md.
+data/**
+!data/.gitkeep
+
+# Generated artifacts
+outputs/
+checkpoints/
+cache/
+logs/
+figures/generated/
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.parquet
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.log
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Build metadata
+*.egg-info/
+build/
+dist/

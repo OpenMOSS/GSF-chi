@@ -1,0 +1,27 @@
+{
+  "task": "axial_rotation",
+  "description": "Architecture and optimization settings listed in the implementation appendix.",
+  "source": "Overleaf 4efeb8a, tex/appendix_method.tex",
+  "args": {
+    "modes": [
+      "gsf"
+    ],
+    "seeds": [
+      9,
+      28,
+      29
+    ],
+    "d_model": 48,
+    "n_heads": 4,
+    "n_layers": 2,
+    "dropout": 0.1,
+    "gsf_scale": 5.0,
+    "device": "cuda",
+    "epochs": 25,
+    "batch_size": 24,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "fixed_gsf_frequency": true,
+    "output": "outputs/paper/axial_rotation.json"
+  }
+}

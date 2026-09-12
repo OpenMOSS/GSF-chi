@@ -1,0 +1,29 @@
+{
+  "task": "axial_rotation",
+  "description": "Five-run ACMP replication with unit-conditioned frequencies.",
+  "source": "matched_axial_seed_expansion_20260827 and matched_axial_five_seed_20260827",
+  "args": {
+    "modes": [
+      "gsf"
+    ],
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "d_model": 48,
+    "n_heads": 4,
+    "n_layers": 2,
+    "dropout": 0.1,
+    "gsf_scale": 5.0,
+    "device": "cuda",
+    "epochs": 25,
+    "batch_size": 24,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "fixed_gsf_frequency": false,
+    "output": "outputs/matched/axial_rotation.json"
+  }
+}
