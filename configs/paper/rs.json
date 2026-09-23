@@ -1,0 +1,28 @@
+{
+  "task": "rs",
+  "description": "Architecture and optimization settings listed in the implementation appendix.",
+  "source": "Overleaf 4efeb8a, tex/appendix_method.tex",
+  "args": {
+    "modes": [
+      "gsf"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "d_model": 48,
+    "n_heads": 4,
+    "n_layers": 2,
+    "dropout": 0.1,
+    "gsf_scale": 5.0,
+    "device": "cuda",
+    "epochs": 10,
+    "batch_size": 128,
+    "n_chiral_heads": 2,
+    "stereo_unit_dropout": 0.2,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "output": "outputs/paper/rs.json"
+  }
+}

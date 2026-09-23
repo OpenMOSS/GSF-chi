@@ -1,0 +1,49 @@
+{
+  "task": "central_ecd",
+  "description": "Fixed-seed central ECD configuration recovered from the run manifest.",
+  "source": "gsf_central_ecd_structured_v2_8x2_20260813/final_summary.json",
+  "args": {
+    "modes": [
+      "gsf"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "d_model": 48,
+    "n_heads": 4,
+    "n_layers": 2,
+    "dropout": 0.15,
+    "gsf_scale": 5.0,
+    "device": "cuda",
+    "n_chiral_heads": 4,
+    "batch_size": 128,
+    "readout": "parity_split",
+    "number_readout": "categorical",
+    "position_decode": "independent",
+    "lr": 0.0007,
+    "weight_decay": 0.0001,
+    "stereo_unit_dropout": 0.3,
+    "number_loss_weight": 1.0,
+    "number_ordinal_weight": 0.0,
+    "number_risk_weight": 0.25,
+    "position_loss_weight": 1.0,
+    "position_ordinal_weight": 0.0,
+    "position_risk_weight": 0.125,
+    "position_monotonic_weight": 0.1,
+    "selection_number_weight": 0.25,
+    "selection_position_weight": 0.05,
+    "selection_objective": "scaled_minimum",
+    "selection_symbol_target": 0.533,
+    "selection_symbol_scale": 0.006,
+    "selection_number_target": 1.01,
+    "selection_number_scale": 0.09,
+    "selection_position_target": 2.02,
+    "selection_position_scale": 0.1,
+    "epochs": 50,
+    "split_protocol": "pair-safe-80-10-10",
+    "optimizer": "adamw",
+    "output": "outputs/matched/central_ecd.json"
+  }
+}

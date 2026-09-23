@@ -1,0 +1,33 @@
+{
+  "task": "ranking",
+  "description": "Architecture and optimization settings listed in the implementation appendix.",
+  "source": "Overleaf 4efeb8a, tex/appendix_method.tex",
+  "args": {
+    "modes": [
+      "gsf"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "d_model": 384,
+    "n_heads": 12,
+    "n_layers": 12,
+    "dropout": 0.15,
+    "gsf_scale": 4.6,
+    "device": "cuda",
+    "epochs": 200,
+    "batch_size": 128,
+    "n_chiral_heads": 9,
+    "stereo_unit_dropout": 0.2,
+    "lr": 0.0001,
+    "min_lr": 0.0001,
+    "weight_decay": 0.0003,
+    "ema_decay": 0.9993,
+    "margin": 0.3,
+    "share_gsf_axis_frequency": true,
+    "selection_metric": "ranking_accuracy",
+    "output": "outputs/paper/ranking.json"
+  }
+}

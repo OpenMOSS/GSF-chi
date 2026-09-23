@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsf-chi"
+version = "0.1.0"
+description = "Global Stereochemical Fields for Chiral Graph Transformers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.26,<2", "pandas>=2.0", "scipy>=1.12", "scikit-learn>=1.4", "torch>=2.0", "rdkit>=2024.3", "openpyxl>=3.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+automatic = ["chiralfinder"]
+
+[project.scripts]
+gsf-chi = "gsf_chi.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["data: requires the downloaded molecular datasets"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

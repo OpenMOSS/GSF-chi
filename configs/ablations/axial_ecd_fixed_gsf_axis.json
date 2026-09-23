@@ -1,0 +1,39 @@
+{
+  "task": "axial_ecd",
+  "description": "Change fixed_gsf_axis to True.",
+  "source": "Main paper, mechanism ablation",
+  "args": {
+    "modes": [
+      "gsf"
+    ],
+    "seeds": [
+      9,
+      28,
+      29
+    ],
+    "d_model": 48,
+    "n_heads": 4,
+    "n_layers": 2,
+    "dropout": 0.1,
+    "gsf_scale": 5.0,
+    "device": "cuda",
+    "epochs": 25,
+    "batch_size": 32,
+    "n_chiral_heads": 2,
+    "stereo_unit_dropout": 0.2,
+    "readout": "parity",
+    "number_readout": "ordinal",
+    "lr": 0.0003,
+    "min_lr": 0.0001,
+    "optimizer": "adam",
+    "weight_decay": 1e-05,
+    "number_ordinal_weight": 1.0,
+    "position_ordinal_weight": 0.1,
+    "position_risk_weight": 0.1,
+    "selection_number_weight": 1.0,
+    "selection_position_weight": 0.2,
+    "fixed_gsf_frequency": true,
+    "fixed_gsf_axis": true,
+    "output": "outputs/ablations/axial_ecd_fixed_gsf_axis.json"
+  }
+}
