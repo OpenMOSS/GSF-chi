@@ -115,20 +115,3 @@ weights are obtained separately.
 ## License
 
 The code is released under the [MIT license](LICENSE).
-
-## Citation
-
-If you use GSF-chi in your research, please cite
-[GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers](https://arxiv.org/abs/2609.12532):
-
-```bibtex
-@misc{xie2026gsfchi,
-  title         = {{GSF-$\chi$}: Global Stereochemical Fields for Chiral Graph Transformers},
-  author        = {Jiaqing Xie and Yuxin Wang and Xipeng Qiu},
-  year          = {2026},
-  eprint        = {2609.12532},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.LG},
-  url           = {https://arxiv.org/abs/2609.12532}
-}
-```
